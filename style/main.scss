@@ -21,6 +21,11 @@
   justify-content: space-between;
 }
 
+h1,
+p {
+  line-height: 24px;
+}
+
 // header
 
 .header {
@@ -59,6 +64,7 @@
 
   &__title {
     font-size: 50px;
+    line-height: normal;
   }
 
   &__subtitle {
@@ -89,6 +95,7 @@
     font-weight: 500;
     color: white;
     padding: 15px 40px;
+    cursor: pointer;
   }
 }
 
@@ -120,13 +127,172 @@
         font-size: 18px;
         font-weight: 500;
       }
+
       &__subtitle {
         font-size: 16px;
         font-weight: 400;
       }
+
       &__link {
         color: #006dfe;
         margin-top: 35px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// trip
+
+.section-trip {
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      left: 0;
+      bottom: -20px;
+      background-color: #006dfe;
+    }
+  }
+
+  &__btn {
+    color: #006dfe;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+
+    & img {
+      margin-left: 25px;
+    }
+  }
+
+  &-content {
+    margin-top: 25px;
+
+    &-item {
+      &__title {
+      }
+      &__img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// info
+
+.section-info {
+  margin-top: 100px;
+
+  &-item {
+    margin-bottom: 50px;
+
+    &-content {
+      &__title {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 85px;
+      }
+      &__subtitle {
+        font-size: 16px;
+        margin-bottom: 55px;
+      }
+      &__btn {
+        display: inline-flex;
+        color: #006dfe;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+
+        & img {
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
+
+// card
+
+.section-card {
+  &__title {
+    font-size: 35px;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 2px;
+      left: 0;
+      bottom: -20px;
+      background-color: #006dfe;
+    }
+  }
+
+  &-content {
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+    &-item {
+      max-width: 386px;
+      margin-bottom: 50px;
+
+      &-bg {
+        position: relative;
+
+        &__img {
+          display: block;
+        }
+
+        &-content {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgba(21, 24, 36, 0.6);
+          color: white;
+          padding: 15px 20px;
+
+          &__title {
+            font-size: 18px;
+            font-weight: 500;
+
+            & + .flex .flex:first-child {
+              margin-right: 15px;
+            }
+          }
+          &__subtitle {
+            font-size: 16px;
+            font-weight: 500;
+
+            & + img {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        margin: 40px 0 30px;
+      }
+
+      &__btn {
+        background-color: #1b7dff;
+        border: none;
+        font-size: 16px;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
       }
     }
   }
