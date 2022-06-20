@@ -211,6 +211,10 @@ p {
   margin-left: 25px;
 }
 
+.section-card {
+  padding-bottom: 50px;
+}
+
 .section-card__title {
   font-size: 35px;
   font-weight: 500;
@@ -287,5 +291,37 @@ p {
   color: white;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.section-video {
+  height: 600px;
+  background: url("../image/video.png") no-repeat center center/cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-video__play {
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #0e1d28;
+  color: white;
+  padding: 100px 0;
+}
+
+.footer .container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-item:not(.footer-item:last-child) {
+  margin: 0 100px 0 0;
+}
+
+.footer-item__subtitle:not(.footer-item__subtitle:last-child) {
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */

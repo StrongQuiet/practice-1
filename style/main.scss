@@ -221,6 +221,8 @@ p {
 // card
 
 .section-card {
+  padding-bottom: 50px;
+
   &__title {
     font-size: 35px;
     font-weight: 500;
@@ -270,6 +272,7 @@ p {
               margin-right: 15px;
             }
           }
+
           &__subtitle {
             font-size: 16px;
             font-weight: 500;
@@ -293,6 +296,42 @@ p {
         color: white;
         padding: 10px 20px;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+// video
+
+.section-video {
+  height: 600px;
+  background: url("../image/video.png") no-repeat center center / cover;
+  justify-content: center;
+
+  &__play {
+    cursor: pointer;
+  }
+}
+
+// footer
+
+.footer {
+  background-color: #0e1d28;
+  color: white;
+  padding: 100px 0;
+
+  & .container {
+    align-items: flex-start;
+  }
+
+  &-item {
+    &:not(&:last-child) {
+      margin: 0 100px 0 0;
+    }
+
+    &__subtitle {
+      &:not(&:last-child) {
+        margin-bottom: 5px;
       }
     }
   }
