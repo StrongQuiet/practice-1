@@ -42,6 +42,7 @@ p {
   &-nav {
     &__li {
       list-style: none;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-right: 80px;
@@ -122,6 +123,12 @@ p {
         margin-right: 50px;
       }
 
+      & .flex {
+        display: inline-flex;
+        justify-content: left;
+        text-decoration: none;
+      }
+
       &__title {
         margin: 30px 0;
         font-size: 18px;
@@ -136,7 +143,11 @@ p {
       &__link {
         color: #006dfe;
         margin-top: 35px;
-        cursor: pointer;
+        margin-right: 25px;
+      }
+
+      &__arrow {
+        margin-top: 35px;
       }
     }
   }
@@ -165,6 +176,7 @@ p {
     color: #006dfe;
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
     cursor: pointer;
 
     & img {
@@ -176,7 +188,14 @@ p {
     margin-top: 25px;
 
     &-item {
+      position: relative;
+
       &__title {
+        position: absolute;
+        left: 40px;
+        bottom: 60px;
+        font-size: 50px;
+        color: white;
       }
       &__img {
         width: 100%;
@@ -199,15 +218,18 @@ p {
         font-weight: 500;
         margin-bottom: 85px;
       }
+
       &__subtitle {
         font-size: 16px;
         margin-bottom: 55px;
       }
+
       &__btn {
         display: inline-flex;
         color: #006dfe;
         font-size: 16px;
         font-weight: 400;
+        text-decoration: none;
         cursor: pointer;
 
         & img {
@@ -306,6 +328,7 @@ p {
 .section-video {
   height: 600px;
   background: url("../image/video.png") no-repeat center center / cover;
+  background-attachment: fixed;
   justify-content: center;
 
   &__play {
@@ -329,7 +352,15 @@ p {
       margin: 0 100px 0 0;
     }
 
+    &__title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
     &__subtitle {
+      cursor: pointer;
+
       &:not(&:last-child) {
         margin-bottom: 5px;
       }
